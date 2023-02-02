@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/mustache@latest"></script>
+        <script src="/files/js/chat.js"></script>
+        <link rel="stylesheet" type="text/css" href="/files/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/files/css/chat.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.socket.io/4.5.3/socket.io.min.js" integrity="sha384-WPFUvHkB1aHA5TDSZi6xtDgkF0wXJcIIxXhC6h8OT8EH3fC5PWro5pWJ1THjcfEi" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="{{_id}}" class="wrapper mod">
+            <div class="heads">
+                <p class="titles">{{name}}</p>
+            </div>
+            
+            <div id="mboard" class="display">
+                {{#messages}}
+                <div class="message">
+                    <p class="user">{{name}}</p>
+                    <p class="tmessage">{{message}}</p>
+                </div>
+                {{/messages}}
+            </div>
+            
+            <div id="{{pname}}"class="texts">
+                <input id="stext" placeholder="Type Here" class="finaltext" type="text">
+                <ion-icon id="send" class="send" name="send-outline"></ion-icon>
+            </div>
+        </div>
+        
+    </body>
+    
+</html>
+

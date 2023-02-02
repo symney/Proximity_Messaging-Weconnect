@@ -1,0 +1,101 @@
+}
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+*{
+  box-sizing:border-box;
+  font-family:"Roboto";
+}
+.heads{
+  width:100%;
+  height:10%;
+  background-color: grey;
+  padding:2%;
+  background: #33CCCC;
+  animation: color 9s infinite linear;
+}
+.titles{
+  font-size:25px
+}
+.display{
+    width:100%;
+    height:82.5%;
+    padding: 3%;
+    background-color: midnightblue;
+    overflow-y: scroll;
+}
+.texts{
+    width:100%;
+    height:7.5%;
+    background-color: black;
+    padding:2%;
+}
+.mod{
+  height:90vh;
+  position:fixed;
+}
+
+.finaltext{
+    height:100%;
+    padding:2%;
+    font-size:30px;
+    width:80%
+}
+.send{
+    width:10%;
+    height:100%;
+    float:right;
+    color:white;
+}
+
+.message{
+    background-color: grey;
+    padding:2%;
+    height:auto;
+    width:100%;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+.user{
+    color:white;
+    width:100%;
+    height:auto;
+    font-size: 15px;
+}
+.tmessage{
+    color:white;
+    width:100%;
+    height:auto;
+    font-size: 20px;
+}
+
+@media (orientation: landscape) {
+  .mod{
+    height:100%;
+  }
+  .texts{
+    padding:1vh;
+  }
+  #stext{
+    height:100%;
+  }
+  .finaltext{
+    font-size:20px;
+    padding:0 1vh;
+    
+  }
+  .heads{
+    padding:1vh;
+  }
+  .titles{
+    height:auto;
+    font-size:35px;
+  }
+
+}
